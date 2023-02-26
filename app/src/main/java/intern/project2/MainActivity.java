@@ -4,8 +4,10 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 import intern.project2.databinding.ActivityMainBinding;
 
@@ -19,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         b = ActivityMainBinding.inflate(getLayoutInflater());
         View view = b.getRoot();
         setContentView(view);
+
 
         b.imgBtnClose.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,6 +45,46 @@ public class MainActivity extends AppCompatActivity {
                 alertDialog.show();
 
 
+            }
+        });
+
+        b.btnScreenOne.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, ScreenOneActivity.class));
+                Toast.makeText(MainActivity.this, "This is Screen One", Toast.LENGTH_SHORT).show();;
+            }
+        });
+
+        b.btnScreenTwo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, ScreenTwoActivity.class));
+                Toast.makeText(MainActivity.this, "This is Screen Two", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        b.btnScreenThree.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, ScreenThreeActivity.class));
+                Toast.makeText(MainActivity.this, "This is Screen Three", Toast.LENGTH_SHORT).show();
+            }
+        });
+        
+        b.btnScreenFour.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, ScreenThreeActivity.class));
+                Toast.makeText(MainActivity.this, "This is Screen Four", Toast.LENGTH_SHORT).show();
+            }
+        });
+        
+        b.btnScreenFive.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, ScreenFiveActivity.class));
+                Toast.makeText(MainActivity.this, "This is Screen Five", Toast.LENGTH_SHORT).show();
             }
         });
     }
