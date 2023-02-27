@@ -39,19 +39,14 @@
         android:layout_marginTop="20dp"
         app:cardElevation="10dp"
         app:cardCornerRadius="15dp">
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:padding="10dp"
+            android:padding="20dp"
             android:background="@drawable/custom_card_view1">
 
-        <LinearLayout
-            android:id="@+id/layout1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:padding="10dp"
-            android:orientation="horizontal">
+
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -59,26 +54,31 @@
                 android:id="@+id/iv_circle1"/>
 
             <ImageView
+                android:layout_toRightOf="@id/iv_circle1"
                 android:id="@+id/iv_circle2"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:src="@drawable/custom_card_view1_circle2" />
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="THE CITY BANK"
-            android:textColor="@color/white"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:layout_marginTop="30dp" />
+            <TextView
+                android:id="@+id/tvone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="THE CITY BANK"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_below="@id/iv_circle1"
+                android:layout_marginTop="20dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="*************9009"/>
+                android:text="******9009"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_below="@+id/tvone"
+                android:layout_marginTop="10dp"/>
 
-        </LinearLayout>
+        </RelativeLayout>
 
 
 
@@ -99,8 +99,31 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:padding="10dp"
-            android:background="@drawable/custom_card_view2">
+            android:background="@drawable/custom_card_view2"
+            android:padding="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VISA"
+                android:textSize="40dp"
+                android:textStyle="bold|italic"
+                android:textColor="@color/white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BRAC BANK LTD."
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="**** **** **** 6661"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_marginTop="5dp"/>
+
 
 
         </LinearLayout>
@@ -125,6 +148,29 @@
             android:orientation="vertical"
             android:padding="10dp"
             android:background="@drawable/custom_card_view3">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DISCOVER"
+                android:textSize="40dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EXIM BANK LTD."
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*********9912"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_marginTop="5dp"/>
+
 
 
         </LinearLayout>

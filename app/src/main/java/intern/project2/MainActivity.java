@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
         b.btnScreenFour.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, ScreenThreeActivity.class));
+                startActivity(new Intent(MainActivity.this, ScreenFourActivity.class));
                 Toast.makeText(MainActivity.this, "This is Screen Four", Toast.LENGTH_SHORT).show();
             }
         });

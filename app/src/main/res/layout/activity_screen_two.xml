@@ -22,7 +22,26 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/custom_card_view3"/>
+            android:background="@drawable/custom_card_view3"
+            android:padding="50dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Available Balance"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:gravity="center_horizontal"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="$ 9,10,550"
+                android:gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:textSize="40dp"/>
+
+        </LinearLayout>
     </androidx.cardview.widget.CardView>
 
     <TextView
@@ -45,16 +64,49 @@
         app:layout_constraintLeft_toLeftOf="@+id/textView3"
         android:paddingBottom="10dp">
         <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <TextView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:background="@drawable/circle1"
-                android:text="C"
-                android:textSize="10sp"
-                android:textColor="@color/white"/>
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
 
+            <TextView
+                android:id="@+id/tv01"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="C"
+                android:textSize="40sp"
+                android:textAlignment="center"
+                android:background="@drawable/circle1"/>
+            <TextView
+                android:id="@+id/tv02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The City bank Limited"
+                android:layout_toRightOf="@+id/tv01"
+                android:layout_marginLeft="10sp"
+                android:layout_marginBottom="10sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tv04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Transfer to bank - Completed"
+                android:layout_toRightOf="@+id/tv01"
+                android:layout_below="@+id/tv02"
+                android:layout_marginLeft="10sp"/>
+            <TextView
+                android:id="@+id/tv03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-$ 4000"
+                android:textColor="#FF0909"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="10sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jan 20"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/tv03"/>
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
     <androidx.cardview.widget.CardView
@@ -64,7 +116,53 @@
         app:layout_constraintTop_toBottomOf="@id/cardView5"
         app:layout_constraintRight_toRightOf="@+id/cardView5"
         app:layout_constraintLeft_toLeftOf="@+id/cardView5"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="20dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv21"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="C"
+                android:textSize="40sp"
+                android:textAlignment="center"
+                android:background="@drawable/circle1"/>
+            <TextView
+                android:id="@+id/tv22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The City bank Limited"
+                android:layout_toRightOf="@+id/tv21"
+                android:layout_marginLeft="10sp"
+                android:layout_marginBottom="10sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tv24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Transfer to bank - Completed"
+                android:layout_toRightOf="@+id/tv21"
+                android:layout_below="@+id/tv22"
+                android:layout_marginLeft="10sp"/>
+            <TextView
+                android:id="@+id/tv23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-$ 4000"
+                android:textColor="#FF0909"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="10sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jan 20"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/tv23"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView7"
@@ -73,7 +171,53 @@
         app:layout_constraintTop_toBottomOf="@id/cardView6"
         app:layout_constraintRight_toRightOf="@+id/cardView6"
         app:layout_constraintLeft_toLeftOf="@+id/cardView6"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="20dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv31"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="C"
+                android:textSize="40sp"
+                android:textAlignment="center"
+                android:background="@drawable/circle1"/>
+            <TextView
+                android:id="@+id/tv32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The City bank Limited"
+                android:layout_toRightOf="@+id/tv31"
+                android:layout_marginLeft="10sp"
+                android:layout_marginBottom="10sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tv34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Transfer to bank - Completed"
+                android:layout_toRightOf="@+id/tv31"
+                android:layout_below="@+id/tv32"
+                android:layout_marginLeft="10sp"/>
+            <TextView
+                android:id="@+id/tv33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-$ 4000"
+                android:textColor="#FF0909"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="10sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jan 20"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/tv33"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView8"
         android:layout_width="match_parent"
@@ -81,7 +225,53 @@
         app:layout_constraintTop_toBottomOf="@id/cardView7"
         app:layout_constraintRight_toRightOf="@+id/cardView7"
         app:layout_constraintLeft_toLeftOf="@+id/cardView7"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="20dp">
+        <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="C"
+            android:textSize="40sp"
+            android:textAlignment="center"
+            android:background="@drawable/circle1"/>
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The City bank Limited"
+            android:layout_toRightOf="@+id/tv1"
+            android:layout_marginLeft="10sp"
+            android:layout_marginBottom="10sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transfer to bank - Completed"
+            android:layout_toRightOf="@+id/tv1"
+            android:layout_below="@+id/tv2"
+            android:layout_marginLeft="10sp"/>
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-$ 4000"
+            android:textColor="#FF0909"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="10sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jan 20"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/tv3"/>
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
 
 
 
