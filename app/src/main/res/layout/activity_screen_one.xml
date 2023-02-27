@@ -45,8 +45,9 @@
             android:orientation="vertical"
             android:padding="10dp"
             android:background="@drawable/custom_card_view1">
-        
+
         <LinearLayout
+            android:id="@+id/layout1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:padding="10dp"
@@ -71,7 +72,7 @@
             android:textColor="@color/white"
             android:textSize="20sp"
             android:textStyle="bold"
-            android:layout_marginTop="30dp"/>
+            android:layout_marginTop="30dp" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
