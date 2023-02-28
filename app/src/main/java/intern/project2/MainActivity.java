@@ -9,6 +9,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+
+import intern.project2.Model.Item;
+import intern.project2.adapter.CustomListAdapter;
 import intern.project2.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
@@ -19,8 +23,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         b = ActivityMainBinding.inflate(getLayoutInflater());
-        View view = b.getRoot();
-        setContentView(view);
+        setContentView(b.getRoot());
 
 
         b.imgBtnClose.setOnClickListener(new View.OnClickListener() {
@@ -62,6 +65,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, ScreenTwoActivity.class));
                 Toast.makeText(MainActivity.this, "This is Screen Two", Toast.LENGTH_SHORT).show();
             }
+
         });
 
         b.btnScreenThree.setOnClickListener(new View.OnClickListener() {
@@ -88,4 +92,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+
 }

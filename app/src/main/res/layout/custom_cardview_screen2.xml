@@ -15,21 +15,29 @@
         android:padding="16dp">
 
         <TextView
-            android:id="@+id/tv2"
+            android:id="@+id/tv1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="$5000"
-            android:textSize="20sp"
             android:layout_marginLeft="5sp"
             android:layout_marginBottom="10sp"
             android:textStyle="bold"/>
         <TextView
-            android:id="@+id/tv4"
+            android:id="@+id/tv3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Via City Bank Ltd."
-            android:layout_below="@+id/tv2"
+            android:text="Via "
+            android:layout_below="@+id/tv1"
             android:layout_marginLeft="5sp"/>
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="City Bank Ltd."
+            android:layout_toRightOf="@+id/tv3"
+            android:layout_below="@id/tv1"
+            />
         <ImageView
             android:layout_width="40dp"
             android:layout_height="40dp"
@@ -37,7 +45,8 @@
             android:background="@drawable/circle1"
             android:layout_toLeftOf="@+id/iv1"
             android:layout_marginRight="20dp"
-            android:padding="5sp"/>
+            android:padding="5sp"
+            android:clickable="true"/>
         <ImageView
             android:id="@+id/iv1"
             android:layout_width="40dp"
@@ -45,7 +54,8 @@
             android:src="@drawable/ic_done"
             android:background="@drawable/circle5"
             android:padding="5sp"
-            android:layout_alignParentEnd="true"/>
+            android:layout_alignParentEnd="true"
+            android:clickable="true"/>
 
 
 
