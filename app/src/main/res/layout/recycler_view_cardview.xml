@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardUseCompatPadding="true"
+    android:elevation="8dp"
+    app:cardCornerRadius="8dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <ImageView
+            android:id="@+id/iv41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle3"
+            android:src="@drawable/ic_request_money"
+            android:padding="5dp"
+            android:layout_alignParentLeft="true"/>
+        <ImageView
+            android:id="@+id/iv_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_more"
+            android:layout_alignParentRight="true"/>
+        <TextView
+            android:id="@+id/tv41"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$ 5000"
+            android:textStyle="bold"
+            android:layout_below="@id/iv41"/>
+        <TextView
+            android:id="@+id/tv42"
+            android:layout_below="@id/tv41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="City Bank Account"/>
+
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
