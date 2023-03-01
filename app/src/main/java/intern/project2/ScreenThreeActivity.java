@@ -14,13 +14,18 @@ import intern.project2.Model.Item;
 import intern.project2.Model.ItemScTwo;
 import intern.project2.adapter.CustomListAdapter;
 import intern.project2.adapter.CustomScTwoAdapter;
+import intern.project2.databinding.ActivityScreenThreeBinding;
 
 public class ScreenThreeActivity extends AppCompatActivity {
+
+    ActivityScreenThreeBinding b;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_screen_three);
+        b = ActivityScreenThreeBinding.inflate(getLayoutInflater());
+        setContentView(b.getRoot());
+        getSupportActionBar().hide();
         populateUsersList();
     }
 

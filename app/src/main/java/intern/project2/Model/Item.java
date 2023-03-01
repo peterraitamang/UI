@@ -44,6 +44,8 @@ public class Item {
                 ,"+$ 3500","Feb 18"));
         items.add(new Item("T","The City bank Limited","Trasfer to bank - Completed"
                 ,"-$ 5000","Feb 22"));
+        items.add(new Item("L","Brac Bank Limited","Transfer to Wallet - Completed"
+                ,"+5000","Feb 01"));
         return items;
 
     }

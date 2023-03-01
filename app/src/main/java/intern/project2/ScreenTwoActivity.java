@@ -2,6 +2,7 @@ package intern.project2;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ActionBar;
 import android.os.Bundle;
 import android.widget.ListView;
 
@@ -9,17 +10,24 @@ import java.util.ArrayList;
 
 import intern.project2.Model.Item;
 import intern.project2.adapter.CustomListAdapter;
+import intern.project2.databinding.ActivityScreenFourBinding;
+import intern.project2.databinding.ActivityScreenTwoBinding;
 
 public class ScreenTwoActivity extends AppCompatActivity {
+
+    ActivityScreenTwoBinding b;
 
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_screen_two);
+        b = ActivityScreenTwoBinding.inflate(getLayoutInflater());
+        setContentView(b.getRoot());
+        getSupportActionBar().hide();
         popuateUsersList();
     }
+
 
     private void popuateUsersList() {
 

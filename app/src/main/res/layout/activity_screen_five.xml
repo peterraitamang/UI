@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".ScreenFiveActivity"
     android:orientation="vertical"
-    android:padding="20dp">
+    android:padding="5dp">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cv0"
@@ -26,7 +26,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        app:cardCornerRadius="20dp"
+        app:cardCornerRadius="10dp"
         app:cardElevation="10dp"
         app:cardUseCompatPadding="true">
         <LinearLayout
@@ -56,7 +56,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:cardCornerRadius="20dp"
+            app:cardCornerRadius="10dp"
             app:cardElevation="10dp"
             app:cardUseCompatPadding="true">
             <LinearLayout
