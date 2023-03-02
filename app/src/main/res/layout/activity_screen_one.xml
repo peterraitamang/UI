@@ -7,6 +7,10 @@
     tools:context=".ScreenOneActivity"
     android:padding="15dp">
 
+    <include
+        layout="@layout/toolbar_layout"
+        android:id="@+id/layout" />
+
 
     <TextView
         android:id="@+id/tv_screenOne_title"

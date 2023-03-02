@@ -12,6 +12,8 @@ public class ScreenOneActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_screen_one);
+        Toolbar toolbar = findViewById(R.id.layout);
+        getSupportActionBar(toolbar);
         //        ActionBar actionBar = getSupportActionBar();
 //        actionBar.setTitle("go back to Menu");
 //        actionBar.setDisplayShowHomeEnabled(true);
