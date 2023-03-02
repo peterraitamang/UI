@@ -20,18 +20,22 @@ public class ScreenFourActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         b = ActivityScreenFourBinding.inflate(getLayoutInflater());
         setContentView(b.getRoot());
-        populateAccountsList();
+        getSupportActionBar().hide();
 
-    }
+        AccountsModel[] myListData = new AccountsModel[]{
+            new AccountsModel("$5000","City Bank Account"),
+            new AccountsModel("$6000","Brac Bank Account"),
+            new AccountsModel("$7000","Exim Bank Account"),
+            new AccountsModel("$1000","Brac Bank Account"),
+            new AccountsModel("$5000","Exim Bank Account"),
+            new AccountsModel("$6000","Exim Bank Account"),
+            new AccountsModel("$7000","Exim Bank Account"),
+            new AccountsModel("$8000","Brac Bank Account")
+        };
 
-    private void populateAccountsList() {
-        ArrayList<AccountsModel> accountsModels = AccountsModel.getList();
-        AccountModelAdapter accountModelAdapter = new AccountModelAdapter(this, accountsModels);
-
-        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL, false);
-        b.rv1.setLayoutManager(linearLayoutManager);
-        b.rv1.setAdapter(accountModelAdapter);
-
-
+        RecyclerView recyclerView =(RecyclerView) findViewById(R.id.rv1 );
+        AccountModelAdapter adapter = new AccountModelAdapter(myListData);
+        recyclerView.setLayoutManager(new LinearLayoutManager(ScreenFourActivity.this, LinearLayoutManager.HORIZONTAL,false));
+        recyclerView.setAdapter(adapter);
     }
 }

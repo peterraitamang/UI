@@ -11,13 +11,17 @@ import java.util.List;
 import intern.project2.Model.Item;
 import intern.project2.Model.ItemScTwo;
 import intern.project2.adapter.CustomListAdapter;
+import intern.project2.databinding.ActivityScreenFiveBinding;
 
 public class ScreenFiveActivity extends AppCompatActivity {
+    ActivityScreenFiveBinding b;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_screen_five);
+        b = ActivityScreenFiveBinding.inflate(getLayoutInflater());
+        setContentView(b.getRoot());
+        getSupportActionBar().hide();
         populateUsersList();
     }
 

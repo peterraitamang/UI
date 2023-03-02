@@ -17,14 +17,14 @@ public class AccountsModel {
         this.amount = amount;
         this.bankAccountName = bankAccountName;
     }
-    public static ArrayList<AccountsModel> getList(){
-        ArrayList<AccountsModel> list = new ArrayList<>();
-        list.add(new AccountsModel("$5000","City Bank Account"));
-        list.add(new AccountsModel("$6000","Brac Bank Account"));
-        list.add(new AccountsModel("$7000","Exim Bank Account"));
-        list.add(new AccountsModel("$2000","Brac Bank Account"));
-        list.add(new AccountsModel("$5000","Exim Bank Account"));
-        list.add(new AccountsModel("10000","City Bank Account"));
-        return list;
-    }
+//    public static ArrayList<AccountsModel> getList(){
+//        ArrayList<AccountsModel> list = new ArrayList<>();
+//        list.add(new AccountsModel("$5000","City Bank Account"));
+//        list.add(new AccountsModel("$6000","Brac Bank Account"));
+//        list.add(new AccountsModel("$7000","Exim Bank Account"));
+//        list.add(new AccountsModel("$2000","Brac Bank Account"));
+//        list.add(new AccountsModel("$5000","Exim Bank Account"));
+//        list.add(new AccountsModel("10000","City Bank Account"));
+//        return list;
+//    }
 }

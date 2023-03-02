@@ -7,6 +7,8 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
+import androidx.recyclerview.widget.RecyclerView;
+
 import java.util.ArrayList;
 
 import intern.project2.Model.Item;
@@ -38,6 +40,7 @@ public class CustomListAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
+
         if (convertView ==null){
             convertView = LayoutInflater.from(context).
                     inflate(R.layout.custom_cardview_screen1, parent, false);
