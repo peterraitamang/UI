@@ -21,7 +21,6 @@ public class ScreenFiveActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         b = ActivityScreenFiveBinding.inflate(getLayoutInflater());
         setContentView(b.getRoot());
-        getSupportActionBar().hide();
         populateUsersList();
     }
 

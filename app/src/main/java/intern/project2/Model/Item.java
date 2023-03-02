@@ -46,6 +46,8 @@ public class Item {
                 ,"-$ 5000","Feb 22"));
         items.add(new Item("L","Brac Bank Limited","Transfer to Wallet - Completed"
                 ,"+5000","Feb 01"));
+        items.add(new Item("L","Brac Bank Limited","Transfer to Wallet - Completed"
+                ,"+5000","Feb 01"));
         return items;
 
     }

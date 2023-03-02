@@ -20,7 +20,7 @@ public class ScreenFourActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         b = ActivityScreenFourBinding.inflate(getLayoutInflater());
         setContentView(b.getRoot());
-        getSupportActionBar().hide();
+
 
         AccountsModel[] myListData = new AccountsModel[]{
             new AccountsModel("$5000","City Bank Account"),

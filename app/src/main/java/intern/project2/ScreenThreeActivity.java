@@ -25,7 +25,6 @@ public class ScreenThreeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         b = ActivityScreenThreeBinding.inflate(getLayoutInflater());
         setContentView(b.getRoot());
-        getSupportActionBar().hide();
         populateUsersList();
     }
 

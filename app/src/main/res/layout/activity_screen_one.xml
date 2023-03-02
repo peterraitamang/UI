@@ -8,9 +8,11 @@
     android:padding="15dp">
 
     <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         layout="@layout/toolbar_layout"
-        android:id="@+id/layout" />
-
+        android:id="@+id/layout"
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <TextView
         android:id="@+id/tv_screenOne_title"
@@ -19,9 +21,10 @@
         android:text="Bank Accounts &amp; Credit Cards"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
+
     <ScrollView
         android:id="@+id/scrollview1"
         android:layout_width="match_parent"

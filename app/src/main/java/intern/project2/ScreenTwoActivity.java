@@ -24,7 +24,6 @@ public class ScreenTwoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         b = ActivityScreenTwoBinding.inflate(getLayoutInflater());
         setContentView(b.getRoot());
-        getSupportActionBar().hide();
         popuateUsersList();
     }
 

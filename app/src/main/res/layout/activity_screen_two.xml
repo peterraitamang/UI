@@ -59,7 +59,7 @@
         app:layout_constraintTop_toBottomOf="@id/textView3"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:listSelector="#C8D0FF"/>
+        android:listSelector="#C8D0FF" />
 
 <!--    <androidx.cardview.widget.CardView-->
 <!--        android:id="@+id/cardView5"-->

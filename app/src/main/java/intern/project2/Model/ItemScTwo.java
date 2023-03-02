@@ -23,6 +23,9 @@ public class ItemScTwo {
         items.add(new ItemScTwo("$6000","Brac Bank Ltd."));
         items.add(new ItemScTwo("$7000","Exim Bank Ltd."));
         items.add(new ItemScTwo("$8000","Trust Bank Ltd."));
+        items.add(new ItemScTwo("$8000","Trust Bank Ltd."));
+        items.add(new ItemScTwo("$8000","Trust Bank Ltd."));
+        items.add(new ItemScTwo("$8000","Trust Bank Ltd."));
         return items;
     }
 }

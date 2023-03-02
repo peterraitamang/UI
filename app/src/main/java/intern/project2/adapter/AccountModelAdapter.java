@@ -11,6 +11,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import org.w3c.dom.Text;
@@ -20,6 +21,7 @@ import java.util.ArrayList;
 import intern.project2.Model.AccountsModel;
 import intern.project2.R;
 import intern.project2.databinding.ActivityScreenFourBinding;
+import intern.project2.databinding.CustomCardviewScreen1Binding;
 
 public class AccountModelAdapter extends RecyclerView.Adapter<AccountModelAdapter.ViewHolder> {
 
@@ -58,26 +60,20 @@ public class AccountModelAdapter extends RecyclerView.Adapter<AccountModelAdapte
     public int getItemCount() {
         return mydata.length;
     }
-//    private Context context;
-//    private ArrayList<AccountsModel> accountsModels;
-//
-//    public AccountModelAdapter(Context context, ArrayList<AccountsModel> accountsModels) {
-//        this.context = context;
-//        this.accountsModels = accountsModels;
-//    }
 
     public static class ViewHolder extends RecyclerView.ViewHolder{
 
         public TextView textView1,textView2;
-        public RecyclerView recyclerView_cardview;
+        public CardView recyclerView_cardview;
         public ImageView button_more;
 
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
+
             this.textView1 = (TextView) itemView.findViewById(R.id.tv41);
             this.textView2 = (TextView) itemView.findViewById(R.id.tv42);
-            this.recyclerView_cardview =(RecyclerView) itemView.findViewById(R.id.cardView_recyclerView);
+            this.recyclerView_cardview = (CardView) itemView.findViewById(R.id.cardView_recyclerView);
             this.button_more = (ImageView) itemView.findViewById(R.id.iv_more);
 
         }
